@@ -7,11 +7,11 @@ const port=3000
 
 app.use(express.json())
 
-app.get('/bfhl',(req,res)=>{
+app.get('/Bajaj_Finserv_Health_Challenge/bfhl',(req,res)=>{
     res.status(200).json({"operation_code":1})
 })
 
-app.post('/bfhl',(req,res)=>{
+app.post('/Bajaj_Finserv_Health_Challenge/bfhl',(req,res)=>{
     let newObj=req.body;
     let onlyLi=newObj.data;
     var onlyNumbers=onlyLi.filter(function(charis){
